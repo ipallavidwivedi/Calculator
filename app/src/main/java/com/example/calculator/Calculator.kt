@@ -46,6 +46,7 @@ fun Calculator(modifier: Modifier = Modifier, viewModel: CalculatorViewModel = C
     val resultText = viewModel.resultText.observeAsState()
 
     Box(
+        //need to change gradient look
         modifier = Modifier
             .fillMaxSize()
             .background(
