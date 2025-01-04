@@ -46,21 +46,19 @@ fun Calculator(modifier: Modifier = Modifier, viewModel: CalculatorViewModel = C
     val resultText = viewModel.resultText.observeAsState()
 
     Box(
-
-
         modifier = Modifier
             .fillMaxSize()
             .background(
                 brush = Brush.verticalGradient(
                     colors = listOf(
                         Color(0xFF5C774E) , // Green
-                        Color(0xFF0F1D12), // Subtle dark green
                         Color(0xFF070707), // Dark color
                     ),
                     startY = 5f, // Adjust the start position of the gradient
                 )
             )
     ) {
+
         Column(
             modifier = modifier .fillMaxSize(),
             horizontalAlignment = Alignment.Start,
@@ -105,6 +103,8 @@ fun Calculator(modifier: Modifier = Modifier, viewModel: CalculatorViewModel = C
 
         }
     }
+
+
 }
 
 
